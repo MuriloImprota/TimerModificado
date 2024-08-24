@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo Pomodoro">
+    <title>focus timer</title>
+    <link rel="shortcut-icon" href="./assets/favicon.svg" type="image/x-svg">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+
+    <section id="division">
+        <section id="controls" class="flex">
+            <section id="timer" class="flex">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            <section class="musicbuttons">
+            <button data-action="playRunning" class="ph ph-play-circle">
+                <span class="sr-only ">Iniciar Contador</span>
+            </button>
+            <button data-action="stopRunning" class="ph ph-stop-circle">
+                <span class="sr-only ">Pausar Contador</span>
+            </button>
+            <button data-action="addTime" class="ph ph-plus-circle">
+                <span class="sr-only ">Adicionar tempo</span>
+            </button>
+            <button data-action="removeTime" class="ph ph-minus-circle">
+                <span class="sr-only ">Remover tempo</span>
+            </button>
+        </section>
+        </section>
+
+        <section id="logos" class="flex">
+            <button data-action="clickTree" class="ph ph-tree">
+                <span class="sr-only ">Musica floresta</span>
+            </button>
+
+            <button data-action="clickRain" class="ph ph-cloud-rain">
+                <span class="sr-only ">Musica chuva</span>
+            </button>
+
+            <button data-action="clickHouse" class="ph ph-house">
+                <span class="sr-only ">Musica cafeteria</span>
+            </button>
+
+            <button data-action="clickFire" class="ph ph-fire">
+                <span class="sr-only ">Musica lareira</span>
+            </button>
+
+        </section>
+    </section>  
+
+       
+
+    </div>
+</body>
+
+</html>

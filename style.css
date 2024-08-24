@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg--color:hsl(194,5%,7%);
+    --text-color:hsl(240,40%,98%);
+    --primary-color:hsl(194,100%,63%);
+    --controls--bg-colors:hsl(194,0%,14%);
+    font-size: clamp(40%, 1% + 2vw , 62.5%); /*Calculo responsivo do tamanho da fonte. O minimo é 40% e o maximo 62,5% com base na soma de 1% + 2vh*/
+    --button-secondary:hsl(194, 40%, 98%);
+
+}
+/*light mode*/
+
+html.light {
+    --bg--color:hsl(240,40%,98%);
+    --text-color: hsl(194, 5%, 7%);
+    --controls--bg-colors:hsl(194,0%,14%);
+    font-size: clamp(40%, 1% + 2vw , 62.5%); /*Calculo responsivo do tamanho da fonte. O minimo é 40% e o maximo 62,5% com base na soma de 1% + 2vh*/
+
+}
+
+
+.sr-only {
+width: 1px;
+height: 1px;
+position: absolute;
+overflow: hidden;
+margin: -1px;
+padding: 0px;
+border: 0;
+appearance: none;
+}
+
+body{
+    background: white;
+    color: var(--text-color);
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app {
+    display: grid;
+    justify-items: center;
+}
+
+
+#timer {
+    display: flex;
+    align-items: center;
+    font-size: 12.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 1.5rem;
+    color: #323238;
+   
+}
+
+#controls {
+    margin-top: 1.6rem;
+    gap: 4rem;
+    border-radius: 999rem;
+    margin-bottom: 5rem;
+}
+
+button{
+    border: 0;
+    background: transparent;
+    color: hsl(194, 5%, 7%);
+    font-size: 6.4rem;
+}
+
+.secondary{
+    color: var(--button-secondary);
+}
+
+.musicbuttons{
+    display: flex;
+    gap: 3rem;
+}
+
+#division {
+    display: flex;
+    align-items: flex-end;
+    gap: 19.2rem;
+}
+
+#logos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+
+
+#logos button{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+    width: 13.8rem;
+    height: 15.2rem;
+    background: #E1E1E6;
+    border-radius: 2.4rem;
+   
+}
+
+#logos button:hover{
+background: #02799D;
+color: white;
+}
